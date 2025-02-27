@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+:root {
+    --main-color: lightseagreen;
+    --sidebar-color: rgb(58, 57, 57);
+}
+
+.sidebar {
+    height: 100vh;
+    width: 270px;
+    background-color: var(--sidebar-color);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 140px;
+}
+
+.main-section {
+    /* border: 2px solid salmon; */
+    padding-left: 300px;
+    background-color: rgb(37, 37, 37);
+    color: white;
+    padding-top: 80px;
+    padding-right: 30px;
+}
+
+.homepage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .about-page{
+    height: 200vh;
+} */
+
+.logo {
+    font-size: 30px;
+    color: white;
+    position: relative;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-left: 5px solid var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+    left: -20px;
+    bottom: -12px;
+}
+
+.logo::after {
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-right: 5px solid var(--main-color);
+    border-top: 5px solid var(--main-color);
+    /* left: -20px; */
+    right: -20px;
+    top: -8px;
+}
+
+.side-menu {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: .6s;
+}
+
+.side-menu li a:hover {
+    color: var(--main-color);
+}
+
+.side-menu li a i {
+    margin-right: 15px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 30px;
+    color: white;
+}
+
+.stylish-text {
+    font-family: "Clicker Script", serif;
+}
+
+.left-content h1 span {
+    color: var(--main-color);
+}
+
+/* .main-page-content {
+    border: 2px solid salmon;
+} */
+
+.para {
+    color: rgb(176, 176, 176);
+}
+
+.main-btn {
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 30px;
+    font-size: var(--main-color)
+}
+
+.right-img {
+    /* border: 2px solid green; */
+    text-align: center;
+    position: relative;
+}
+
+.right-img img {
+    /* width: 300px; */
+    width: 80%;
+}
+
+
+.right-img::before {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-top: 5px solid var(--main-color);
+    border-left: 5px solid var(--main-color);
+    top: -40px;
+    left: 10px;
+}
+
+.right-img::after {
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-bottom: 5px solid var(--main-color);
+    border-right: 5px solid var(--main-color);
+    bottom: -40px;
+    right: 10px;
+}
+
+
+
+/* About Page */
+.main-head {
+    font-size: 55px;
+    position: relative;
+}
+
+.main-head::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: var(--main-color);
+    bottom: -5px;
+    left: 0;
+}
+
+.main-head::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    left: 0;
+    background-color: var(--main-color);
+    bottom: -15px;
+}
+
+.sub-head {
+    margin-top: 50px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.sub-head span {
+    color: var(--main-color);
+}
+
+.details-para {
+    /* font-size: 17px; */
+    border-bottom: 1px solid gray;
+    padding-bottom: 15px;
+}
+
+.skill-box p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.level {
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.394);
+    border-radius: 6px;
+    position: relative;
+
+}
+
+.level::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    background-color: var(--main-color);
+}
+
+.education-box {
+    background-color: var(--sidebar-color);
+    position: relative;
+    border-radius: 12px;
+}
+
+.education-details h2 {
+    font-size: 25px;
+}
+
+.education-box::before {
+    content: '';
+    position: absolute;
+    height: 95%;
+    width: 3px;
+    left: 25px;
+    background-color: var(--main-color);
+}
+
+.education-details p:first-child {
+    position: relative;
+}
+
+.education-details p:first-child::before {
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    left: -29px;
+    top: 5px;
+}
+
+.edu-head {
+    font-size: 40px;
+}
+
+/* services page */
+.services-page {
+    padding-bottom: 100px;
+}
+
+.service-card {
+    background-color: var(--sidebar-color);
+    text-align: center;
+    border-radius: 8px;
+}
+
+.service-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.service-card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--main-color);
+}
+
+.active {
+    color: var(--main-color) !important;
+}
+
+/* contact page */
+.contact-page {
+    padding-bottom: 80px;
+}
+
+
+.contact-content {
+    text-align: center;
+}
+
+.contact-content h1 {
+    color: var(--main-color);
+}
+
+.contact-content h2 {
+    font-size: 18px;
+}
+
+.contact-icon i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.contact-form input, .contact-form input:focus, .contact-form textarea, .contact-form textarea:focus {
+    font-size: 18px;
+    background-color: var(--sidebar-color);
+    border: none;
+    outline: none;
+    padding-block: 10px;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder {
+    color: rgb(222, 222, 222);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 .08rem var(--main-color);
+}
+
+
+
+/* responsive design */
+
+@media screen and (width<992px) {
+    .main-section {
+        height: auto !important;
+        padding: 100px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .right-img {
+        margin-top: 150px;
+    }
+}
+@media screen and (width<1330px) {
+    
+    .main-btn {
+        width: 100% !important;
+    }
+    .hire{
+        margin-top: 15px;
+    }
+}
+@media screen and (width<768px) {
+    
+    .hire{
+        margin-bottom: 15px;
+    }
+    .experience{
+        margin-top: 20px;
+    }
+}
+
